@@ -17,15 +17,15 @@ Ngày cập nhật: 25/04/2017
     - Gói tin, địa chỉ logic.  
     - Giao thức liên mạng (Internet Protocol – IP).  
     - Tuyến đường (route), bảng định tuyến (routing table), giao thức định tuyến (routing protocol).  
-Lớp/tầng 3 – Lớp/tầng Vận chuyển (Transport Layer):
-Xử lý về chất lượng dịch vụ, các vấn đề độ tin cậy, kiểm soát luồng, sửa lỗi.
-Phân đoạn, dòng dữ liệu, lưu lượng.
-Kết nối có định hướng và không định hướng.
-Kiểm soát lường đầu cuối.
-Phát hiện lỗi và phục hồi.
-Lớp/tầng 4 – Lớp/tầng Ứng dụng (Application Layer):
-Xử lý các giao thức cấp cao, các vấn đề về trình diễn, số hóa (encoding), kiểm soát dialog.
-TCP/IP gộp tất cả các vấn đề liên quan đến ứng dụng vào 1 lớp/tầng, và đảm bảo các dữ liệu này được đóng góp hoàn toàn ở lớp/tầng tiếp theo.
-FTP, HTTP, DNS, SMNP, …
-Định dạng dữ liệu, cấu trúc dữ liệu, encode…
-Kiểm soát dialog, quản trị phiên…
+- *Lớp 3 vận chuyển (Transport Layer):*  
+    - Xử lý về chất lượng dịch vụ, các vấn đề độ tin cậy, kiểm soát luồng, sửa lỗi.  
+    - Phân đoạn, dòng dữ liệu, lưu lượng.  
+    - Kết nối có định hướng và không định hướng.  
+    - Kiểm soát lường đầu cuối.  
+    - Phát hiện lỗi và phục hồi.    
+- *Lớp 4 ứng dụng (Application Layer):*  
+    - Xử lý các giao thức cấp cao, các vấn đề về trình diễn, số hóa (encoding), kiểm soát dialog.  
+    - TCP/IP gộp tất cả các vấn đề liên quan đến ứng dụng vào 1 lớp/tầng, và đảm bảo các dữ liệu này được đóng góp hoàn toàn ở lớp/tầng tiếp theo.  
+    - FTP, HTTP, DNS, SMNP, …  
+    - Định dạng dữ liệu, cấu trúc dữ liệu, encode…  
+    - Kiểm soát dialog, quản trị phiên…  
