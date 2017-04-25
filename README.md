@@ -29,17 +29,38 @@ Ngày cập nhật: 25/04/2017
         - Định dạng dữ liệu, cấu trúc dữ liệu, encode…  
         - Kiểm soát dialog, quản trị phiên…  
 ![img](https://kimnguyen.info/kim/wp-content/uploads/2014/09/Chap-2-TCP-IP-Protocol-300x251.jpg)  
-![img](https://image.slidesharecdn.com/ositcp-ip-120727232444-phpapp02/95/osi-tcp-ip-14-728.jpg?cb=1343431818)  
-### 2.So sánh OSI với TCP/IP?  
+![img](https://image.slidesharecdn.com/ositcp-ip-120727232444-phpapp02/95/osi-tcp-ip-14-728.jpg?cb=1343431818)   
+
+### 2.Phương thức hoạt động của bộ giao thức TCP/IP ?  
+**Quá trình đóng mở gói dữ liệu trong TCP/IP**  
+![img](http://www.vnpro.vn/wp-content/uploads/2015/11/Qu%C3%A1-tr%C3%ACnh-%C4%91%C3%B3ng-m%E1%BB%9F-g%C3%B3i-d%E1%BB%AF-li%E1%BB%87u-trong-TCP-IP.jpg)  
+- Cũng tương tự như trong mô hình OSI, khi truyền dữ liệu , quá trình tiến hành từ tầng trên xuống tầng dưới, qua mỗi tầng dữ liệu được them vào thông tin điều khiển gọi là Header. Khi nhận dữ liệu thì quá trình xảy ra ngược lại. dữ liệu được truyền từ tấng dưới lên và qua mỗi tầng thì phần header tương ứng sẽ được lấy đi và khi đến tầng trên cùng thì dữ liệu không còn phần header nữa.    
+**Cấu trúc dữ liệu trong TCP/IP**  
+![img](http://www.vnpro.vn/wp-content/uploads/2015/11/C%E1%BA%A5u-tr%C3%BAc-d%E1%BB%AF-li%E1%BB%87u-trong-TCP-IP.jpg)  
+
+Hình trên cho ta thấy lược đồ dữ liệu qua các tầng.. Trong hình ta thấy tại các tầng khác nhau dữ liệu được mang những thuật ngữ khác nhau  
+    - Trong tầng ứng dụng: dữ liệu là các luồng được gọi là stream.  
+    - Trong tầng giao vận: đơn vị dữ liệu mà TCP gửi xuống gọi là TCP segment.  
+    - Trong tầng mạng, dữ liệu mà IP gửi xuống tầng dưới gọi là IP Datagram  
+    - Trong tầng liên kết, dữ liệu được truyền đi gọi là frame.  
+
+
+### 3.So sánh OSI với TCP/IP?  
 ![img](https://hsto.org/getpro/habr/comment_images/219/06c/99d/21906c99d593e1cbcef7d235df6b69e8.png)  
 ![img](http://www.vnpro.vn/wp-content/uploads/2015/11/sp-sanh.jpg)  
-- **Giống nhau:**
-    - Đều được chia thành các lớp/tầng.  
-    - Đều có lớp/tầng ứng dụng, dù chúng bao gồm các dịch vụ khác nhau.   
-    - Đều có lớp/tầng vận chuyển, mạng tương đương.  
-- **Khác nhau:**
-    - Mô hình TCP/IP gộp các vấn đề của lớp/tầng trình diễn và phiên vào trong lớp/tầng ứng dụng của nó.  
-    - Mô hình TCP/IP gộp lớp/tầng vật lý và liên kết dữ liệu của mô hình OSI thành 1 lớp/tầng.  
-    - Mô hình TCP/IP trông đơn giản hơn vì có ít lớp hơn.  
-    - Các mạng thực tế không được xây dựng dựa trên mô hình OSI, mặc dù mô hình OSI được sử dụng để tham chiếu.  
+- **Giống nhau:**  
+    - *Cả hai đều có kiến trúc phân lớp.  
+    - Đều có **lớp Application**, mặc dù các dịch vụ ở mỗi lớp khác nhau.
+    - Đều có các **lớp Transport** và **Network**.  
+    - Sử dụng kĩ thuật chuyển packet **(packet-switched)**.
+    - Các nhà quản trị mạng chuyên nghiệp cần phải biết rõ hai mô hình trên.  
+- **Khác nhau:**   
+    - Mô hình TCP/IP kết hợp **lớp Presentation** và **lớp Session** vào trong **lớp Application**.
+    - Mô hình TCP/IP kết hợp **lớp DataLink** và **lớp Physical** vào trong một lớp.  
+    - Mô hình TCP/IP đơn giản hơn bởi vì có ít lớp hơn.  
+    - Nghi thức TCP/IP được chuẩn hóa và được sử dụng phổ biến trên toàn thế giới.*   
+    
+### 4.Nên sử dụng mô hình nào hơn?  
+- **Mô hình TCP/IP thông dụng hơn.Đa phân sử dụng các giao thức của TCP/IP nhưng lại tham chiếu bằng OSI.
+
 
