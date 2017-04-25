@@ -34,15 +34,19 @@ Ngày cập nhật: 25/04/2017
 ### 2.Phương thức hoạt động của bộ giao thức TCP/IP ?  
 **Quá trình đóng mở gói dữ liệu trong TCP/IP**  
 ![img](http://www.vnpro.vn/wp-content/uploads/2015/11/Qu%C3%A1-tr%C3%ACnh-%C4%91%C3%B3ng-m%E1%BB%9F-g%C3%B3i-d%E1%BB%AF-li%E1%BB%87u-trong-TCP-IP.jpg)  
+
 - Cũng tương tự như trong mô hình OSI, khi truyền dữ liệu , quá trình tiến hành từ tầng trên xuống tầng dưới, qua mỗi tầng dữ liệu được them vào thông tin điều khiển gọi là Header. Khi nhận dữ liệu thì quá trình xảy ra ngược lại. dữ liệu được truyền từ tấng dưới lên và qua mỗi tầng thì phần header tương ứng sẽ được lấy đi và khi đến tầng trên cùng thì dữ liệu không còn phần header nữa.    
 **Cấu trúc dữ liệu trong TCP/IP**  
+
 ![img](http://www.vnpro.vn/wp-content/uploads/2015/11/C%E1%BA%A5u-tr%C3%BAc-d%E1%BB%AF-li%E1%BB%87u-trong-TCP-IP.jpg)  
 
+
 - Hình trên cho ta thấy lược đồ dữ liệu qua các tầng.. Trong hình ta thấy tại các tầng khác nhau dữ liệu được mang những thuật ngữ khác nhau  
-        - Trong tầng ứng dụng: dữ liệu là các luồng được gọi là stream.  
-        - Trong tầng giao vận: đơn vị dữ liệu mà TCP gửi xuống gọi là TCP segment.  
-        - Trong tầng mạng, dữ liệu mà IP gửi xuống tầng dưới gọi là IP Datagram  
-        - Trong tầng liên kết, dữ liệu được truyền đi gọi là frame.  
+
+     - Trong tầng ứng dụng: dữ liệu là các luồng được gọi là stream.  
+     - Trong tầng giao vận: đơn vị dữ liệu mà TCP gửi xuống gọi là TCP segment.  
+     - Trong tầng mạng, dữ liệu mà IP gửi xuống tầng dưới gọi là IP Datagram  
+     - Trong tầng liên kết, dữ liệu được truyền đi gọi là frame.  
 
 
 ### 3.So sánh OSI với TCP/IP?  
